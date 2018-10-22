@@ -42,5 +42,10 @@ class Owner
     @pets[:dogs] << new_dog
   end
 
+  def walk_dogs
+    @pets.each do |type|
+      type == :dogs ? type.each {|i| i.mood = "happy"} : nil 
+    end
+  end
 
 end
