@@ -21,6 +21,6 @@ class Owner
     self.all.count
   end
 
-  
+
 
 end
