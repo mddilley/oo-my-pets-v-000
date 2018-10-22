@@ -56,7 +56,7 @@ class Owner
 
   def feed_fish
     @pets.each do |type, pets|
-      type == :fishes ? type.each {|i| i.mood = "happy"} : nil
+      type == :fishes ? pets.each {|i| i.mood = "happy"} : nil
     end
   end
 
