@@ -1,8 +1,11 @@
 class Owner
   # code goes here
+  attr_accessor :name
+
   @@all = []
 
-  def initialize
+  def initialize(name)
+    @name = name
     @@all << self
   end
 
@@ -12,6 +15,6 @@ class Owner
 
   def self.reset_all
     self.all.clear
-  end  
+  end
 
 end
