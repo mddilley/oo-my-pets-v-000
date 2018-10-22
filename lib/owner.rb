@@ -48,4 +48,10 @@ class Owner
     end
   end
 
+  def play_with_cats
+    @pets.each do |type, pets|
+      type == :cats ? pets.each {|i| i.mood = "happy"} : nil
+    end
+  end
+
 end
