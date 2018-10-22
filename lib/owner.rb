@@ -61,7 +61,7 @@ class Owner
   end
 
   def sell_pets
-    reset_all
+    
     @pets.each do |type, pets|
       pets.each {|i| i.mood = nervous}
     end
