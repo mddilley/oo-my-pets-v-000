@@ -44,7 +44,7 @@ class Owner
 
   def walk_dogs
     @pets.each do |type|
-      type == :dogs ? type.each! {|i| i.mood = "happy"} : nil 
+      type == :dogs ? type.each {|i| type[i].mood = "happy"} : nil 
     end
   end
 
