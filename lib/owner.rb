@@ -21,6 +21,10 @@ class Owner
     self.all.count
   end
 
+  def say_species
+    "I am a #{species}"
+  end
+
 
 
 end
